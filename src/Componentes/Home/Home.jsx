@@ -38,7 +38,7 @@ export default function Home() {
                 setFetchData(res)
                 return
             }
-            let res = await fetch(`${process.env.REACT_APP_API_URL}/products?page=${0}&limit=${productsPerpage}`).then(res => res.json())
+            let res = await fetch(`https://deploy-api-mercadito-production.up.railway.app/products?page=${0}&limit=${productsPerpage}`).then(res => res.json())
 
 
             setFetchData(res)

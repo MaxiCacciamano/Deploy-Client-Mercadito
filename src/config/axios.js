@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const clienteAxios = axios.create({
-  baseURL: `${process.env.REACT_APP_API_URL}`,
+  baseURL:"https://deploy-api-mercadito-production.up.railway.app",
 });
 
 export default clienteAxios;
