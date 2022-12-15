@@ -40,9 +40,9 @@ function App() {
           localStorage.setItem("id_cart", data._id)
         }
       }
-    )()
-  }, []);
-
+      )()
+    }, []);
+    console.log(process.env.REACT_APP_API_URL)
   return (
     <div>
       {pathname !== "/login" && pathname!=="/create"&&pathname!=="/register"&&pathname!=="/forgot-password"&&<NavBar/>}
